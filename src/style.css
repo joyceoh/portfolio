@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #a5a58d;
+  color: #5c5c4d;
   background-color: #FFF1E6;
 
   font-synthesis: none;
@@ -30,9 +30,17 @@ body {
   min-height: 100vh;
 }
 
+h1, h2, h3 {
+  color: #a5a58dff;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h3 {
+  font-size: 3em;
 }
 
 button {
@@ -54,18 +62,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* classes */
-.card {
-  padding: 2em;
-}
-
-.boldedname {
-  font-size: 1.5em;
-  color: #CB997E;
-}
-
-
-
 #app {
   display: flex column stretch;
   width: 100%;
@@ -75,7 +71,7 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #cb997e;
     background-color: #ffffff;
   }
   a:hover {

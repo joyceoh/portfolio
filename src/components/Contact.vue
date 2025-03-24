@@ -1,6 +1,4 @@
 <script>
-  // import linkedin from '../../public/icons8-linkedin.json'
-  // import github from '../../public/icons8-github.svg'
 export default {
 
   
@@ -19,7 +17,7 @@ export default {
     <a href="https://github.com/joyceoh" target="_blank">
       <img src='../../icons8-github.svg' alt="github icon">
     </a>
-    <a href="" target="_blank">
+    <a href="https://bsky.app/profile/joyceoh.bsky.social" target="_blank">
       <img src='../../icons8-bluesky.svg' style="height: 55px; padding-bottom: 10px" alt="bluesky icon"/>
     </a>
     </div>
