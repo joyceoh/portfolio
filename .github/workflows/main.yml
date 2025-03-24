@@ -1,0 +1,43 @@
+name: Vue Portfolio CI/CD
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js 🔧
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies 📦
+        run: npm ci
+
+      - name: Build 🔨
+        run: npm run build
+
+      # Add linting if you want to enforce code quality
+      # - name: Lint 🧹
+      #   run: npm run lint
+
+      # Add testing when you have tests in your project
+      # - name: Test 🧪
+      #   run: npm run test
+
+      - name: Deploy to GitHub Pages 🚀
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist  # The folder the action should deploy
+          branch: gh-pages # The branch the action should deploy to
