@@ -36,17 +36,17 @@ jobs:
       #   run: npm run test
 
       - name: Deploy to GitHub Pages 🚀
-        # if: github.event_name != 'pull_request'
-        # uses: JamesIves/github-pages-deploy-action@v4
-        # with:
-        #   folder: dist  # The folder the action should deploy
-        #   branch: gh-pages # The branch the action should deploy to
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Default token, sufficient if permissions are correct
-          PERSONAL_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Use if needed
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -A
-          git commit -m "Deploying to gh-pages"
-          git push --force https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}.git main:gh-pages
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist  # The folder the action should deploy
+          branch: gh-pages # The branch the action should deploy to
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Default token, sufficient if permissions are correct
+        #   PERSONAL_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Use if needed
+        # run: |
+        #   git config --global user.name 'github-actions[bot]'
+        #   git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        #   git add -A
+        #   git commit -m "Deploying to gh-pages"
+        #   git push --force https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}.git main:gh-pages
