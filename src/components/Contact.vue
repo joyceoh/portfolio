@@ -9,16 +9,16 @@ export default {
     <div>
     <h3>Contact Me: </h3>
     <a href="mailto:joyceoh246@gmail.com">
-      <img src="../../icons8-mail.svg" alt="Email icon" />
+      <img src="@/assets/icons8-mail.svg" alt="Email icon" />
     </a>
     <a href='https://www.linkedin.com/in/joyce-oh/' target="_blank">
-      <img src="../../icons8-linkedin.svg" alt="linkedin icon"/>
+      <img src="@/assets/icons8-linkedin.svg" alt="linkedin icon"/>
     </a>
     <a href="https://github.com/joyceoh" target="_blank">
-      <img src='../../icons8-github.svg' alt="github icon">
+      <img src='@/assets/icons8-github.svg' alt="github icon">
     </a>
     <a href="https://bsky.app/profile/joyceoh.bsky.social" target="_blank">
-      <img src='../../icons8-bluesky.svg' style="height: 55px; padding-bottom: 10px" alt="bluesky icon"/>
+      <img src='@/assets/icons8-bluesky.svg' style="height: 55px; padding-bottom: 10px" alt="bluesky icon"/>
     </a>
     </div>
   </section>

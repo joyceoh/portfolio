@@ -8,9 +8,9 @@ const projects = ref([
     title: "Alki",
     description: "A platform to study using a learning technique called spaced repeition. The application features customizability for personalized studying.",
     technologies: ["TypeScript", "React", "Tailwind", "Spring Boot", "Java", "MongoDB"],
-    imageUrl: "/alki.gif",  // Make sure to add this image to your public folder
+    imageUrl: "/alki.gif", 
     githubUrl: "https://github.com/joyceoh/portfolio",
-    liveUrl: "alkiprep.com"  // Replace with actual URL when deployed
+    liveUrl: "alkiprep.com" 
   },
   {
     id: 2,

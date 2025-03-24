@@ -28,11 +28,11 @@
       
       <div class="project-links">
         <a v-if="githubUrl" :href="githubUrl" target="_blank" class="project-link">
-          <img src="../../icons8-github.svg" alt="GitHub" class="link-icon" />
+          <img src="@/assets/icons8-github.svg" alt="GitHub" class="link-icon" />
           Code
         </a>
         <a v-if="liveUrl" :href="liveUrl" target="_blank" class="project-link">
-          <img src="../../icons8-link-100.png" alt="Live Demo" class="link-icon" />
+          <img src="@/assets/icons8-link-100.png" alt="Live Demo" class="link-icon" />
           Live Demo
         </a>
       </div>
