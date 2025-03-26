@@ -3,23 +3,26 @@
 # abort on errors
 set -e
 
-# build
+# Clean install dependencies
+npm ci
+
+# Build with base properly set
 npm run build
 
-# navigate into the build output directory
+# Ensure CNAME file exists in dist
+echo "joyceoh.com" > dist/CNAME
+
+# Prepare for deployment
 cd dist
 
-# if you are deploying to a custom domain
-echo 'joyceoh.com' > CNAME
-
+# Initialize git
 git init
+git checkout -b main
 git add -A
-git commit -m 'deploy'
+git commit -m 'Deploy to GitHub Pages'
 
-# if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:joyceoh/joyceoh.github.io.git main
-
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
+# Force push to the gh-pages branch
 git push -f git@github.com:joyceoh/portfolio.git main:gh-pages
 
+# Go back to previous directory
 cd -
