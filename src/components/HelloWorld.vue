@@ -3,9 +3,9 @@
 
 <template>
 <section class='title'>
-<h1>Welcome! <br> My name is 
+<h1>welcome! <br> my name is 
   <span class='name-container'>
-  <span class="typed-out"> Joyce oh</span>
+  <span class="typed-out"> joyce oh</span>
   </span>
 </h1>
 <p>A full stack software engineer devoted to pushing creative boundries and creating user centered application.</p>
@@ -33,8 +33,8 @@ p {
   color: #CB997E;
   display: inline-block;
   overflow: hidden;
-  letter-spacing: .25em; 
-  border-right: .7em solid;
+  letter-spacing: .10em; 
+  border-right: .5em solid;
   white-space: nowrap;
   width: 0;
   animation: 
