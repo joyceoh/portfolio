@@ -34,6 +34,12 @@ jobs:
       # Add testing when you have tests in your project
       # - name: Test 🧪
       #   run: npm run test
+      
+      - name: Copy CNAME to build output
+        run: |
+          if [ ! -f dist/CNAME ]; then
+            echo "joyceoh.com" > dist/CNAME
+          fi
 
       - name: Deploy to GitHub Pages 🚀
         if: github.event_name != 'pull_request'
@@ -41,12 +47,3 @@ jobs:
         with:
           folder: dist  # The folder the action should deploy
           branch: gh-pages # The branch the action should deploy to
-        # env:
-        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Default token, sufficient if permissions are correct
-        #   PERSONAL_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Use if needed
-        # run: |
-        #   git config --global user.name 'github-actions[bot]'
-        #   git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        #   git add -A
-        #   git commit -m "Deploying to gh-pages"
-        #   git push --force https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}.git main:gh-pages
