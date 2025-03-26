@@ -35,12 +35,6 @@ jobs:
       # - name: Test 🧪
       #   run: npm run test
       
-      - name: Copy CNAME to build output
-        run: |
-          if [ ! -f dist/CNAME ]; then
-            echo "joyceoh.com" > dist/CNAME
-          fi
-
       - name: Deploy to GitHub Pages 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
