@@ -5,14 +5,10 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: process.env.NODE_ENV === 'production' ? '/my-portfolio/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
     }
-  },
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/portfolio/'
-    : '/'
-}
+  }
 })
