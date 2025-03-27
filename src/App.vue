@@ -48,16 +48,9 @@
     <!-- Wave transition between AboutMe and Background -->
   <!-- </WaveTransition> -->
   <Background/>
-  <WaveTransition wave-color="#4f46e5">
-    <!-- Wave transition between Background and Projects -->
-  </WaveTransition>
   <Projects/>
-  <WaveTransition wave-color="#ec4899">
-    <!-- Wave transition between Projects and Contact -->
-  </WaveTransition>
   <Contact/>
 </template>
 
 <style>
-/* Your global styles here */
 </style>
