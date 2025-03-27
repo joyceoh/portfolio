@@ -11,9 +11,4 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src")
     }
   },
-  build: {
-    outDir: "dist",
-    assetsDir: "assets",
-    assetsInlineLimit: 4096,
-  }
 })

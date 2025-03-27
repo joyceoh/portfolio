@@ -25,7 +25,7 @@ jobs:
         run: npm ci
 
       - name: Build 🔨
-        run: npm run deploy
+        run: npm run build
 
       # Add linting if you want to enforce code quality
       # - name: Lint 🧹
@@ -35,9 +35,9 @@ jobs:
       # - name: Test 🧪
       #   run: npm run test
       
-      # - name: Deploy to GitHub Pages 🚀
-      #   if: github.event_name != 'pull_request'
-      #   uses: JamesIves/github-pages-deploy-action@v4
-      #   with:
-      #     folder: assets  # The folder the action should deploy
-      #     branch: gh-pages # The branch the action should deploy to
+      - name: Deploy to GitHub Pages 🚀
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: assets  # The folder the action should deploy
+          branch: gh-pages # The branch the action should deploy to
