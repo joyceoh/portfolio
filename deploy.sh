@@ -4,10 +4,10 @@
 set -e
 
 # Clean install dependencies
-npm ci
+pnpm install --frozen-lockfile
 
 # Build with base properly set
-npm run build
+pnpm run build
 
 # Ensure CNAME file exists in dist
 echo "joyceoh.com" > dist/CNAME
