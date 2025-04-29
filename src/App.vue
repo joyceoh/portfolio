@@ -1,11 +1,10 @@
 <script setup>
   import HelloWorld from './components/HelloWorld.vue'
   import AboutMe from './components/AboutMe.vue'
-  import Background from './components/Background.vue'
+  /*import Background from './components/Background.vue' */
   import Projects from './components/Projects.vue'
   import Contact from './components/Contact.vue'
-  // import WaveTransition from './components/WaveTransition.vue'
-  import { ref, onMounted, onBeforeUnmount } from 'vue';
+  import { defineComponent, ref, onMounted, onBeforeUnmount } from 'vue';
   
   const originalTitle = ref(document.title);
   const inactiveTitle = ref("Come back!");
@@ -47,10 +46,10 @@
   <!--<WaveTransition wave-color="#10b981"> -->
     <!-- Wave transition between AboutMe and Background -->
   <!-- </WaveTransition> -->
-  <Background/>
   <Projects/>
   <Contact/>
 </template>
 
 <style>
+
 </style>

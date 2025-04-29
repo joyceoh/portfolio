@@ -10,6 +10,8 @@
     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
+    "@shader-art/plugin-uniform": "^0.2.3",
+    "shader-art": "^1.3.0",
     "vue": "^3.4.37"
   },
   "devDependencies": {

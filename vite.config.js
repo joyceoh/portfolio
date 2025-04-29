@@ -5,10 +5,11 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: "./",
+  base: './',
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src")
+      "@": path.resolve(__dirname, "./src"),
+      vue: 'vue/dist/vue.esm-bundler.js'
     }
   },
 })
