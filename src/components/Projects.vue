@@ -22,11 +22,11 @@ const projects = ref([
   },
   {
     id: 3,
-    title: "Valorant Randomizer",
-    description: "Using the offical Valorant API, the project is meant to be used with a duo to randomly pick an agent and weapon.",
-    technologies: ["JavaScript", "HTML5", "CSS3", "API Integration"],
-    imageUrl: "valorant.gif",
-    githubUrl: "https://github.com/joyceoh/project3",
+    title: "Arcus",
+    description: "A social treatment tracker for cancer patients.",
+    technologies: ["React", "Vite", "Python", "SQL"],
+    imageUrl: "arcus.gif",
+    githubUrl: "https://github.com/joyceoh/customize-timeline",
     liveUrl: ""
   },
   {
@@ -34,7 +34,7 @@ const projects = ref([
     title: "PawMatch",
     description: "An application focused on two different user bases -users and shelters - to create greater accessibility for pet adoption.",
     technologies: ["React", "Node.js", "MongoDB", "Express"],
-    imageUrl: "/project2-preview.png",
+    imageUrl: "pawmatch.gif",
     githubUrl: "https://github.com/joyceoh/project2",
     liveUrl: ""
   },
@@ -49,11 +49,11 @@ const projects = ref([
   },
   {
     id: 6,
-    title: "Arcus",
-    description: "A social treatment tracker for cancer patients.",
-    technologies: ["React", "Vite", "Python", "SQL"],
-    imageUrl: "/project2-preview.png",
-    githubUrl: "https://github.com/joyceoh/project2",
+    title: "Valorant Randomizer",
+    description: "Using the offical Valorant API, the project is meant to be used with a duo to randomly pick an agent and weapon.",
+    technologies: ["JavaScript", "HTML5", "CSS3", "API Integration"],
+    imageUrl: "valorant.gif",
+    githubUrl: "https://github.com/joyceoh/project3",
     liveUrl: ""
   },
 

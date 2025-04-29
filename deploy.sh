@@ -12,10 +12,14 @@ npm run build
 # Ensure CNAME file exists in dist
 echo "joyceoh.com" > dist/CNAME
 
+# Make sure all assets are correctly included
+cp -r public/* dist/ 2>/dev/null || :
+
 # Prepare for deployment
 cd dist
 
-# Initialize git
+# Initialize or reset git
+rm -rf .git
 git init
 git checkout -b main
 git add -A
