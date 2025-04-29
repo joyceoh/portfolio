@@ -8,8 +8,8 @@
   
   const originalTitle = ref(document.title);
   const inactiveTitle = ref("Come back!");
-  const activeFavicon = ref("@/assets/heart.png");
-  const inactiveFavicon = ref("@/assets/cry.png");
+  const activeFavicon = ref("./src/assets/heart.png");
+  const inactiveFavicon = ref("./src/assets/cry.png");
   
   const changeFavicon = (iconPath) => {
     let link = document.querySelector("link[rel~='icon']");
